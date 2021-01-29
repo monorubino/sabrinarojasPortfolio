@@ -1,0 +1,8 @@
+[1118/120857.501:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
+[0121/141238.865:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
+[0121/141239.162:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\Jirafa y Mono\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\14414d8d-63b1-4ae1-863e-ee13bd1c5773: El sistema no puede encontrar la ruta especificada. (0x3)
+[0121/141239.164:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\Jirafa y Mono\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\1b5bb3e3-e9d9-4e13-abe0-510c1c288002: El sistema no puede encontrar la ruta especificada. (0x3)
+[0121/141239.167:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\Jirafa y Mono\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\818cbeb6-1099-4067-abdb-371c95fd719a: El sistema no puede encontrar la ruta especificada. (0x3)
+[0121/141239.169:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\Jirafa y Mono\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\6cb2be17-3d6e-4c26-9aef-1b94964db390: El sistema no puede encontrar la ruta especificada. (0x3)
+[0121/141239.171:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\Jirafa y Mono\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\bba34240-1411-4d3a-a085-9c0059f0fd09: El sistema no puede encontrar la ruta especificada. (0x3)
+[0121/141239.173:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\Jirafa y Mono\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\967b1058-f7b8-4900-94dc-99ad40b5aede: El sistema no puede encontrar la ruta especificada. (0x3)
