@@ -285,6 +285,7 @@ ol, ul {
 .container {
     max-width: 1000px;
     margin: 0 auto;
+    flex: 1;
     display: inherit;
     justify-content: inherit;
     align-items: inherit;
@@ -298,8 +299,23 @@ ol, ul {
 
 }
 
-@media screen and (max-width: 768px) {
-
+@media screen and (max-width: 767px) {
+    .header {
+        display: block;
+        height: auto;
+    }
+    .header .logo {
+        text-align: center;
+    }
+    .header ul {
+        display: block;
+    }
+    .header a {
+        justify-content: center;
+    }
+    .header ul li {
+        height: 50px
+    }
 }
 
 @media screen and (max-width: 480px) {
