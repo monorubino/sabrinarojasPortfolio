@@ -147,11 +147,16 @@ ol, ul {
 .project-details {
     font-size: 20px;
     margin: 10px 0;
-
+    width: 50%;
 }
 
 .project-image-container {
-    width: 500px;
+    width: 50%;
+    text-align: center;
+}
+
+.project-image-container img {
+    max-width: 100%;
 }
 
 .experience-container {
@@ -316,10 +321,45 @@ ol, ul {
     .header ul li {
         height: 50px
     }
+    .project {
+        display: block;
+    }
+    .project-details {
+        width: auto;
+        height: 50%;
+        font-size: 16px;
+    }
+    .project-image-container {
+        width: auto;
+        text-align: center;
+        height: 50%;
+    }
+    .project-title{
+        font-size: 1.6em;
+        margin-bottom: .3em;
+        margin-top: .3em;
+    }
+    .project-work {
+        font-size: .7em;
+        margin: .4em 0;
+    }
+    .project-date {
+        font-size: 1em;
+        margin: .4em 0;
+    }
+    .project-url {
+        font-size: 1em;
+        margin: .4em 0;
+    }
+    .project-description {
+        font-size: .8em;
+    }
 }
 
 @media screen and (max-width: 480px) {
-
+    .project-details {
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width: 320px) {
