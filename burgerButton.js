@@ -1,7 +1,17 @@
 const burgerButton = document.querySelector('#burger-menu')
 const activeMenu = document.querySelector('.menu');
+const ipadSize = window.matchMedia('screen and (max-width:767px)');
 
-burgerButton.addEventListener('click', deployMenu)
+ipadSize.addListener(validation)
+
+function validation(event) {
+    if (event.matches) {
+        burgerButton.addEventListener('click', deployMenu)
+    }
+    else {
+        burgerButton.removeEventListener('click', deployMenu)
+    }
+}
 
 function deployMenu() {
     if (activeMenu.classList.contains('is-active')) {
