@@ -12,6 +12,7 @@ function validation(event) {
         burgerButton.removeEventListener('click', deployMenu)
     }
 }
+validation (ipadSize);
 
 function deployMenu() {
     if (activeMenu.classList.contains('is-active')) {
