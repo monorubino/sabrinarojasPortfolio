@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
+    <i class="burger-button icon-menu"> </i>
     <header class="header">
         <div class="container">
             <figure class="logo">
@@ -29,14 +30,14 @@
         </nav>
         </div>
     </header>
-<!--     <section class="hero">
+    <section class="hero">
         <div class= "container">
             <h1>¡Hola! soy <strong>Sabrina Rojas.</strong><br>
             <strong>Locutora de marcas</strong><br> y actriz de doblaje.
             </h1>
             <img class="hero-image" src="../sabrinaportfolio/images/SabrinaPerfil.jpg" width= "500px" height= "300px" >
         </div>
-    </section> -->
+    </section>
     <section id="portafolio" class="portfolio">
         <div class="container">
             <h2 class="portfolio-title">Proyectos destacados</h2>
@@ -57,7 +58,10 @@
                     </p>
                 </div>
                     <figure class="project-image-container">
-                        <img class="project-image" src="images/mejoral.png" width="50%" height:"50%" alt="Foto Sabrina Rojas">
+                        <!-- <img class="project-image" src="images/mejoral.png" width="50%" height:"50%" alt="Foto Sabrina Rojas"> -->
+                        <div class="video-container">
+                            <iframe class="video-insert" width="100%" height="315" src="https://www.youtube.com/embed/BGZnJXXIKc8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                     </figure>
             </article>
             <article class="project">
@@ -144,7 +148,7 @@
             </article>
         </div>
     </section>
-<!--     <section id="contacto" class="contact">
+    <section id="contacto" class="contact">
         <div class= "container">
             <form class="form-email" action="/contactos/">
                 <h3>Vamos a ponerle voz a tus ideas</h3>
@@ -152,25 +156,25 @@
                 <button>Enviar</button>
             </form>
             <div class="social">
-                    <a href="https://www.linkedin.com/in/sabrina-rojas/" class="social-link linkedin"></a>
-                    <a href="https://soundcloud.com/sabrina-rojas-782394404" class="social-link soundcloud"></a>
+                    <a href="https://www.linkedin.com/in/sabrina-rojas/" class="social-link icon-linkedin"></a>
+                    <a href="https://soundcloud.com/sabrina-rojas-782394404" class="social-link icon-soundcloud"></a>
             </div>
         </div>
-    </section> -->
-<!--     <footer class="footer">
+    </section>
+    <footer class="footer">
         <div class="container">
-            <div>
+            <div class="devname">
                 <p>
                     Designed by Mariano Rubino
                 </p>
             </div>
-            <div>
+            <div class="devlinks">
                 <p>
-                    <img src="../sabrinaportfolio/images/github.png" alt="GitHub Mariano Rubino" width= 20px height= 20px>
+                    <i class="icon-github"></i>
                     Check Mariano's works <a href="">here</a>
                 </p>
             </div>
         </div>
-    </footer> -->
+    </footer>
 </body>
 </html>

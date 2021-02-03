@@ -1,5 +1,52 @@
+/* FUENTE PARA MENU HAMBURGUESA Y LOGOS */
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../images/icomoon/fonts/icomoon.eot');
+    src:  url('../images/icomoon/fonts/icomoon.eot?iufv5x#iefix') format('embedded-opentype'),
+      url('../images/icomoon/fonts/icomoon.ttf?iufv5x') format('truetype'),
+      url('../images/icomoon/fonts/icomoon.woff?iufv5x') format('woff'),
+      url('../images/icomoon/fonts/icomoon.svg?iufv5x#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-mailemail:before {
+    content: "\e904";
+  }
+  .icon-github:before {
+    content: "\e902";
+  }
+  .icon-soundcloud:before {
+    content: "\e900";
+  }
+  .icon-linkedin:before {
+    content: "\e901";
+  }
+  .icon-menu:before {
+    content: "\e903";
+  }
+  
+/* HASTA ACÁ FONT MENU HAMBURGUESA Y LOGOS*/
+
 body {
     font-family: 'Montserrat', sans-serif;
+    background-color: #F6EEDF;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -27,6 +74,23 @@ h2 {
     margin-top: 40px;
     margin-bottom: 40px;
     background-color: #F6EEDF;
+}
+
+.burger-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 211, 28, .7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    left: 5px;
+    top: 5px;
+    color: #363946;
+    font-size: 1.5em;
+    display: none;
 }
 
 .header {
@@ -159,6 +223,25 @@ ol, ul {
     max-width: 100%;
 }
 
+.video-container {
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
+    position: relative;
+    border-radius: 10px;
+}
+
+.video-insert {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 1em;
+}
+
 .experience-title {
     width: 100%;
     margin-top: -1px;
@@ -242,7 +325,6 @@ ol, ul {
     border-style: solid;
     border-radius: 5px;
     padding: 5px 20px 5px 25px;
-    background-image: url("../images/correosvg.png");
     background-size: 15px 15px;
     background-repeat: no-repeat;
     background-position-y: center;
@@ -263,21 +345,18 @@ ol, ul {
     font-weight: bolder;
 }
 
+.emailuser {
+    background-image: url("../images/correosvg.png");
+}
+
 .social-link {
-    display: inline-block;
+    display: inline;
     justify-content: space-between;
-    width: 50px;
-    height: 50px;
-}
-
-.social-link.linkedin {
-    background-image: url("../images/linkedinsvg.png");
-    background-size: 50px 50px;
-}
-
-.social-link.soundcloud {
-    background-image: url("../images/soundcloudsvg.png");
-    background-size: 50px 50px;
+    width: 50%;
+    height: 100%;
+    color: black;
+    font-size: 3.5em;
+    text-decoration: none;
 }
 
 .footer {
@@ -285,7 +364,7 @@ ol, ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    padding: 10px;
 }
 
 .footer img {
@@ -294,6 +373,7 @@ ol, ul {
 
 .container {
     max-width: 1000px;
+    padding: 0 1em; 
     margin: 0 auto;
     flex: 1;
     display: inherit;
@@ -306,13 +386,59 @@ ol, ul {
 /* MEDIA QUERIES DESKTOP FIRST */
 
 @media screen and (max-width: 1024px) {
+    .hero {
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        padding: 2em;
+    }
+    h1 {
+        font-size: 2em;
+        z-index: 2;
+    }
+    .hero-image {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
 
+    } 
 }
 
 @media screen and (max-width: 767px) {
+    .burger-button {
+        display: flex;
+    }
+    .menu {
+        position: fixed;
+        background-color: rgba(214, 52, 71, .9);
+        z-index: 99;
+        top: 0;
+        left: -100vw;
+        bottom: 0;
+        width: 100vw;
+        /* height: 100vh; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .3s;
+    }
+    .menu.is-active {
+        left: 0;
+    }
     .header {
         display: block;
         height: auto;
+    }
+    .header a {
+        font-size: 2em;
+        height: 40px;
+        text-decoration: underline;
+        margin-bottom: .5em;
+        color: #F6EEDF;
     }
     .header .logo {
         text-align: center;
@@ -374,9 +500,43 @@ ol, ul {
     .project-details {
         font-size: 12px;
     }
+    .contact {
+        height: auto;
+        padding: 1em 0;
+        display: block;
+        text-align: center;
+    }
+    .form-email button {
+        margin: 1em auto;
+    }
+    .form-email h3 {
+        margin-top: 0;
+    }
+    .footer {
+        display: block;
+        flex-wrap: wrap;
+        text-align: center;
+        border: 1px solid transparent;
+        justify-content: center;
+    }
+    .devname {
+        text-align: center;
+    }
+    .devlinks {
+        text-align: center;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
 }
 
 @media screen and (max-width: 320px) {
-
+    h1 {
+        font-size: 1.2em;
+        background: rgba (0,0,0,.5);
+    }
+    .hero {
+        padding: 2em 1em;
+    }
 }
 
